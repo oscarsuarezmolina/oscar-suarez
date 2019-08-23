@@ -1,0 +1,16 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "iostream"
+
+using namespace std;
+
+void main()
+{ float lado1, lado2, area;
+   cout<< "ingrese la base del rectangulo: " << endl;
+   cin >> lado1;
+    cout<< "ingrese la altura del rectangulo: " << endl;
+   cin >> lado2;
+   area = lado1*lado2;
+   cout << "El area del rectangulo es: " << area;
+   getch();
+}
