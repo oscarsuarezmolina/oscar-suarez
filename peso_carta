@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "iostream"
+
+using namespace std;
+
+void main()
+{ float p;
+  cout << " ingrese el peso de la carta:    ";
+  cin >> p;
+  if ( p>=0 && p < 50)
+	{ cout << " el costo de la carta es: 1,50 Bs ";
+	}
+  if ( p>=50 && p < 100)
+	{ cout << " el costo de la carta es: 4 Bs ";
+	}
+  if ( p>=100 && p < 200)
+	{ cout << " el costo de la carta es: 6 Bs ";
+	}
+  if ( p>=200 && p < 350)
+	{ cout << " el costo de la carta es: 10,50 Bs ";
+	}
+  if ( p>=350 && p < 500)
+	{ cout << " el costo de la carta es: 15 Bs ";
+    }
+  if ( p>500)
+	{ cout << " no se puede enviar como carta ";
+	}
+	getch();
+}
