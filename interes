@@ -1,0 +1,20 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "iostream"
+
+using namespace std;
+
+void main()
+{	float c, n, t, interes;
+	cout << " digite el capital: " << endl;
+	cin >> c;
+	cout << " digite la cantidad de años: " << endl;
+	cin>> n;
+	cout << " digite el interes: " << endl;
+	cin>> t;
+	t=t/100;
+	interes=c*n*t;
+	cout << " el interes simple es: " << interes ;
+	getch();
+
+}
