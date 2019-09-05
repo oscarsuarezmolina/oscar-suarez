@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include "iostream"
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{ int mm, ss , hh;
+  cout << " digite las horas: " ;
+  cin >> hh ;
+  cout << " digite los minutos: ";
+  cin >> mm;
+  cout << " digite los segundos: " ;
+  cin >> ss ;
+  if (hh <= 12 && hh >= 0 && mm >=0 && mm <=59 && ss>=0 && ss <= 59)
+	{ cout << " la hora es: " << hh<<":"<<mm<<":"<<ss << endl;
+    }
+  
+  if (hh > 12 && hh <= 24 && mm >=0 && mm <=59 && ss>=0 && ss <= 59)
+	{   hh=hh-12;
+		cout << " la hora es: " << hh<<":"<<mm<<":"<<ss<<endl;
+    }
+  if( hh>24 || hh<0 || mm>60 || mm<<0 || ss>60 || ss<0 )
+	  { cout << " la hora digitada es incorrecta ";
+      }
+  getch();
+}
