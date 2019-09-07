@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include "iostream"
+#include "conio.h"
+
+using namespace std;
+
+
+
+void main()
+{ int i,n,factorial, num;
+{
+   do
+   { cout << " digite el valor de n: ";
+     cin >> n;
+	 factorial = 1;
+	 for (int i=1; i<=n ; i++)
+	 { factorial = factorial * i;
+	 } cout << " el factorial es: " << factorial << endl;
+   }while (n!=0);
+  } 
+	 getch();
+   }
