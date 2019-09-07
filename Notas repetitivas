@@ -1,0 +1,32 @@
+#include "stdafx.h"
+#include "iostream"
+#include "conio.h"
+
+using namespace std;
+
+
+void main()
+{ int pp,sp,tp,np,ef,nota,n, num,i=1;
+	do {
+    cout << " digite la cantidad de estudiantes " ; 
+	cin >> n;
+	} while (n>40);
+	do 
+	{ cout << " digite la nota del primer parcial: ";
+	  cin >> pp;
+	  cout << " digite la nota del segundo parcial: ";
+	  cin >> sp;
+	  cout << " digite la nota del tercer parcial: ";
+	  cin >> tp;
+	  cout << " digite la nota del proyecto: ";
+	  cin >> np;
+	  cout << " digite la nota del examen final: ";
+	  cin >> ef; 
+	  nota = (((pp+sp+tp)/3*0.4)+(np*0.2)+(ef*0.4));
+	  cout << " la nota final es: "<<nota<<endl;
+	  i++;
+	} while (i  <= n );
+		getch();
+
+   }
+
